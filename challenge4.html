@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 5</title>
+    <style>
+    body{
+        margin: 2%;
+        border: 1px solid black;
+        background-color: #b3b3b3;
+    }
+    #image{
+        line-height:325px;
+        width: 388px;
+        height: 325px;
+        border:5px solid black;
+        margin:0 auto;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        text-align: center;
+        background-color: #8e68ff;
+        background-size: 100%;
+        margin-bottom:25px;
+        font-size:150%;
+    }
+    .preview{
+        width:10%;
+        margin-left:17%;
+        border: 10px solid black;
+    }
+    img{
+        width:95%;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+
+    <script>
+    // I used Two functions here.  
+    //Starter idea at: 
+    // https://codepen.io/ColleenEMc/pen/XmZzWw
+    //dont try and solve it, use what have from questions 1 and 2, 
+    function hover(picture){
+        document.querySelector("#image").style.backgroundImage="url("+ picture.src;")"
+        document.querySelector("#image").innerHTML = picture.alt;
+    }   
+
+ function unDo(){
+        document.querySelector("#image").style.backgroundImage="url()"
+        document.querySelector("#image").innerHTML="Hover or tab over/into an image below";
+    }    
+    /* In this function you should 
+    1) change the url for the background image of the div with the id = "image" 
+    to the source file of the preview image
+    
+    2) Change the text  of the div with the id = "image" 
+    to the alt text of the preview image 
+    */
+
+    //always want to make sure previewPic is on the left bc it already has a value 
+    </script>
+</head>
+
+<body>
+    <h1>Challenge 5</h1>
+        <div id = "image">
+        </div>
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" alt="Grapefruit Halves" tabindex = "0" 
+            src = "https://cdn0.wideopeneats.com/wp-content/uploads/2018/05/Citrus-Hybrid-Families-Naturally-Occuring.png" 
+            onmouseover = "hover(this)" onmouseleave = "unDo()" onfocus = "hover(this)" onblur = "unDo()"
+        >
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->  
+        <img class = "preview" alt="Mixed Citrus" tabindex = "0" 
+            src = "https://geneticliteracyproject.org/wp-content/uploads/2018/02/Screen-Shot-2018-02-08-at-5.15.03-PM.png" 
+            onmouseover = "hover(this)" onmouseleave = "unDo()" onfocus = "hover(this)" onblur = "unDo()"
+        >
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": --> 
+        <img class = "preview" alt="Oranges in Tree" tabindex = "0"
+            src = "https://www.pe.com/wp-content/uploads/migration/om9/om99z9-rpelqamaster0304mandarin23414923.jpg?w=535" 
+            onmouseover = "hover(this)" onmouseleave = "unDo()" onfocus = "hover(this)" onblur = "unDo()"
+        >
+        <img class = "preview" alt="lemon, Orange, lime" tabindex = "0" 
+            src = "https://scstylecaster.files.wordpress.com/2015/04/86506183.jpg"
+            onmouseover = "hover(this)" onmouseleave = "unDo()" onfocus = "hover(this)" onblur = "unDo()"
+        >
+        <img class = "preview" alt="sliced lemon" tabindex = "0" 
+            src = "https://www.seriouseats.com/images/2014/04/20140421-knife-skills-citrus-13.jpg"
+            onmouseover = "hover(this)" onmouseleave = "unDo()" onfocus = "hover(this)" onblur = "unDo()"
+        >
+        <img class = "preview" alt="oranges and lemons in produce section" tabindex = "0"
+            src = "https://www.rd.com/wp-content/uploads/2018/03/oranges-760x506.jpg"
+            onmouseover = "hover(this)" onmouseleave = "unDo()" onfocus = "hover(this)" onblur = "unDo()"
+        >
+
+</body>
+</html>
+    
